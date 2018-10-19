@@ -1,0 +1,12 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  es-nmap:
+    lang: python3-root
+    handler: ./es-nmap
+    image: kulinacs/es-nmap:latest
+    environment:
+      read_timeout: 300s
+      write_timeout: 300s
