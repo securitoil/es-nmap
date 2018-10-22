@@ -1,2 +1,13 @@
+# openfaas
 build
 template
+
+# testing
+.coverage
+.pytest_cache
+.tox
+
+# build artifacts
+*.egg-info
+*.pyc
+__pycache__

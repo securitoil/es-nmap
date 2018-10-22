@@ -3,10 +3,10 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  es-nmap:
-    lang: es-python3-root
-    handler: ./es-nmap
-    image: kulinacs/es-nmap:latest
+  es_nmap:
+    lang: es_python3_root
+    handler: ./es_nmap
+    image: kulinacs/es_nmap:latest
     environment:
       read_timeout: 300s
       write_timeout: 300s
