@@ -4,9 +4,11 @@ provider:
 
 functions:
   es-nmap:
-    lang: python3-root
+    lang: es-python3-root
     handler: ./es-nmap
     image: kulinacs/es-nmap:latest
     environment:
       read_timeout: 300s
       write_timeout: 300s
+      ELASTIC_INDEX: nmap
+      ELASTIC_TYPE: scan
